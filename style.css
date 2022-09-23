@@ -1,0 +1,215 @@
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome';
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+
+/*  PÍSMO   */ 
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	color: black;
+}
+
+h3 {
+	text-align: center;
+	color: black;
+}
+
+p {
+	text-align: center;
+	color: black;
+}
+
+
+/*  NAVIGÁCIA    */ 
+.navigacia {
+	overflow: hidden;
+	border-style: outset;
+}
+
+.navigacia a {
+	float: left;
+	color: black;
+	text-align: left;
+	padding: 8px 100px;
+	text-decoration: none;
+	font-size: 21px;
+	font-family: Century Gothic;
+}
+
+.navigacia1 a {
+	float: center;
+	color: black;
+	text-align: center;
+	padding: 1px 18px;
+	text-decoration: none;
+	font-size: 30px;
+	font-family: Century Gothic;
+}
+
+/*  Horné menu aby bolo nad textom, uživateľ si môže jednoducho zvoliť podsekciu */ 
+.sticky {
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+
+/*  SEKCIA O NÁS    */ 
+.section-title {
+	margin: 3% 0;
+}
+
+.section.title p {
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+.single-team {
+	padding-bottom: 70px;
+	position: center;
+	z-index: 1;
+	overflow: hidden;
+	box-shadow: 5px 5px 15px #000;
+}
+
+.team-img {
+	position: relative;
+	z-index: 5;
+	overflow: hidden;
+}
+
+.team-img img {
+	width: 100%;
+	transition: 0.3s;
+}
+
+.single-team:hover .team-img img {
+	transform: scale(1,1);
+}
+
+.team-content {
+	height: 80px;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	overflow: hidden;
+	bottom: 0;
+	transition: all 0.4s;
+	background: tomato;
+	z-index: 5;
+}
+
+.single-team:hover .team-content {
+	height: 150px;
+}
+
+/*  SEKCIA PLÁNU  */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container1{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 100px 0;
+	background-color: #111;
+}
+
+.timeline{
+	width: 770%;
+	height: auto;
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.timeline ul{
+	list-style: none;
+}
+
+.timeline ul li{
+	padding: 20px;
+	background-color: #1e1f22;
+	color: white;
+	border-radius: 20px;
+	margin-bottom: 40px;
+}
+
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  color: white;
+}
+
+.timeline ul li {
+  width: 50%;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline ul li:nth-child(odd) {
+  float: left;
+  clear: right;
+  transform: translateX(-30px);
+  border-radius: 20px 0px 20px 20px;
+}
+
+.timeline ul li:nth-child(even) {
+  float: right;
+  clear: left;
+  transform: translateX(30px);
+  border-radius: 0px 20px 20px 20px;
+}
+
+.timeline ul li::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+  top: 0px;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  }
+
+.timeline ul li:nth-child(odd)::before {
+  transform: translate(50%, -50%);
+  right: -30px;
+}
+
+.timeline ul li:nth-child(even)::before {
+  transform: translate(-50%, -50%);
+  left: -30px;
+}
+
+

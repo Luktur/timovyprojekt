@@ -23,7 +23,7 @@
 <!-- CHARAKTERISTIKA PROJEKTU -->
 <h1 id="oprojekte">O našom projekte</h1>
 <p>Kecy o našom projekte</p>
-<br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <!-- PLÁN PROJEKTU -->
 <h1 id="planprojektu">Plán projektu</h1>
 <p>Týždenne aktualizovaný plán projektu.</p>
@@ -80,7 +80,7 @@
 <br><br><br><br>
 
 <!-- SEKCIA O NAŠOM TEAME -->
-<div class="team-area">
+<div class="team-area"  >
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -94,7 +94,7 @@
 			<div class="col-md-3">
 				<div class="single-team">
 					<div class="team-img">
-						<img src="1.jpg">
+						<img src="test.jpg">
 					</div>
 					<div class="team-info">
 						<h3>Lukáš Turza</h3>
@@ -108,7 +108,7 @@
 		<div class="col-md-3">
 				<div class="single-team">
 					<div class="team-img">
-						<img src="1.jpg">
+						<img src="test.jpg">
 					</div>
 					<div class="team-info">
 						<h3>Adam Mečíř</h3>
@@ -122,7 +122,7 @@
 		<div class="col-md-3">
 				<div class="single-team">
 					<div class="team-img">
-						<img src="1.jpg">
+						<img src="test.jpg">
 					</div>
 					<div class="team-info">
 						<h3>Kristína Brečková</h3>
@@ -136,7 +136,7 @@
 		<div class="col-md-3">
 				<div class="single-team">
 					<div class="team-img">
-						<img src="1.jpg">
+						<img src="test.jpg">
 					</div>
 					<div class="team-info">
 						<h3>Pavol Lukačka</h3>
@@ -150,7 +150,102 @@
 </div>
 <br><br><br><br>
 <h1 id="kontakt">Kontakt</h1>
-<p>Našiel si chybu, prípadne nás chceš len kontaktovať? Zanechaj nám správu!</p>
+<p>Našiel si chybu, prípadne nás chceš len kontaktovať? Zanechaj nám správu a my sa ti ozveme! </p>
+<p> Nemusíš vypĺňať svoje priezvisko, stačí meno :) </p>
+
+<section>
+	<div class="container2">
+		<form action="https://formspree.io/f/mqkjqqea" method="POST" id="formular">
+
+			<div class="form-group">
+				<label for="UserMeno">Meno</label>
+				<input type="text" id="UserMeno" name="UserMeno">
+			</div>
+
+			<div class="form-group">
+				<label for="UserPriezvisko">Priezvisko</label>
+				<input type="text" id="UserPriezvisko" name="UserPriezvisko">
+			</div>
+
+			<div class="form-group">
+				<label for="UserMail">Email</label>
+				<input type="email" id="UserMail" name="UserMail">
+			</div>
+
+			<div class="form-group">
+				<label for="message">Správa</label>
+				<textarea name="message" id="message" cols="30" rows="10"></textarea>
+			</div>
+
+			<button type="submit">Odošli</button>
+
+		</form>
+	</div>
+	<div id="status"></div>
+</section>
+
+<script type="text/javascript">
+window.addEventListener("DOMContentLoaded", function() {
+
+	var form = document.getElementById("formular");
+	var status = document.getElementById("status");
+
+	function success() {
+		form.reset();
+		status.classList.add("success");
+		status.innerHTML = "Ďakujeme!";
+	}
+
+	function error() {
+		status.classList.add("error");
+		status.innerHTML = "Nastala neočakávaná chyba!";
+	}
+
+	forum.addEventListener("submit", function(ev) {
+		ev.preventDefault();
+		var data = new FormData(form);
+		ajax(form.method, form.action, data, success, error);
+	});
+})
+
+	function ajax(method, url, data, success, error) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(method, url);
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+      success(xhr.response, xhr.responseType);
+    } else {
+      error(xhr.status, xhr.response, xhr.responseType);
+    }
+  };
+  xhr.send(data);
+}
+
+</script>
+
+<section class="footer">
+	<ul class="list">
+		<li>
+			<a href="https://kai.fpv.ucm.sk/" target="_blank">Katedra aplikovanej informatiky</a>
+		</li>
+
+		<li>
+			<a href="https://www.ucm.sk/" target="_blank">Univerzita sv. Cyrila a Metoda</a>
+		</li>
+
+		<li>
+			<a href="https://github.com" target="_blank">Pozri kód na GitHube</a>
+		</li>
+	</ul>
+</section>
+
+<script>
+      var currentTitle = document.title;
+      window.onblur = function () { document.title = 'Nechceš sa vrátiť? 😃 '; }
+      window.onfocus = function () { document.title = currentTitle; }
+</script>
 
 
 </body>

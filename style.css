@@ -3,6 +3,10 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
 
+/*  Stránka ponúka plynulý presun   */ 
+html {
+	scroll-behavior: smooth;
+}
 /*  PÍSMO   */ 
 h1 {
 	text-align: center;
@@ -40,23 +44,14 @@ p {
 	font-family: Century Gothic;
 }
 
-.navigacia1 a {
-	float: center;
-	color: black;
-	text-align: center;
-	padding: 1px 18px;
-	text-decoration: none;
-	font-size: 30px;
-	font-family: Century Gothic;
-}
 
 /*  Horné menu aby bolo nad textom, uživateľ si môže jednoducho zvoliť podsekciu */ 
 .sticky {
-  position: -webkit-sticky; 
-  position: sticky;
-  top: 0;
-  background-color: white;
-  z-index: 1;
+  	position: -webkit-sticky; 
+  	position: sticky;
+  	top: 0;
+ 	background-color: white;
+ 	z-index: 1;
 }
 
 
@@ -65,6 +60,7 @@ p {
 	margin: 3% 0;
 }
 
+/*  Písmo   */ 
 .section.title p {
 	text-transform: uppercase;
 	font-weight: bold;
@@ -79,19 +75,15 @@ p {
 	box-shadow: 5px 5px 15px #000;
 }
 
+/*  Úprava obrázkov v sekcií "O nás"   */ 
 .team-img {
-	position: relative;
-	z-index: 5;
+	position: sticky;
+	z-index: -1;
 	overflow: hidden;
 }
 
 .team-img img {
 	width: 100%;
-	transition: 0.3s;
-}
-
-.single-team:hover .team-img img {
-	transform: scale(1,1);
 }
 
 .team-content {
@@ -148,68 +140,189 @@ p {
 }
 
 .timeline-content h1 {
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
-  margin-bottom: 10px;
+  	font-weight: 500;
+  	font-size: 25px;
+  	line-height: 30px;
+  	margin-bottom: 10px;
 }
 
 .timeline-content p {
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 300;
-  color: white;
+  	font-size: 16px;
+  	line-height: 30px;
+  	font-weight: 300;
+ 	color: white;
 }
 
 .timeline ul li {
-  width: 50%;
-  position: relative;
-  margin-bottom: 50px;
+  	width: 50%;
+  	position: relative;
+  	margin-bottom: 50px;
 }
 
 .timeline ul li:nth-child(odd) {
-  float: left;
-  clear: right;
-  transform: translateX(-30px);
-  border-radius: 20px 0px 20px 20px;
+  	float: left;
+  	clear: right;
+  	transform: translateX(-30px);
+  	border-radius: 20px 0px 20px 20px;
 }
 
 .timeline ul li:nth-child(even) {
-  float: right;
-  clear: left;
-  transform: translateX(30px);
-  border-radius: 0px 20px 20px 20px;
+  	float: right;
+  	clear: left;
+  	transform: translateX(30px);
+  	border-radius: 0px 20px 20px 20px;
 }
 
 .timeline ul li::before {
-  content: "";
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background-color: white;
-  top: 0px;
+  	content: "";
+  	position: absolute;
+  	height: 20px;
+  	width: 20px;
+  	border-radius: 50%;
+  	background-color: white;
+  	top: 0px;
 }
 
 .timeline:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 100%;
-  background-color: white;
+  	content: "";
+  	position: absolute;
+  	top: 0;
+  	left: 50%;
+  	transform: translateX(-50%);
+  	width: 2px;
+  	height: 100%;
+  	background-color: white;
   }
 
 .timeline ul li:nth-child(odd)::before {
-  transform: translate(50%, -50%);
-  right: -30px;
+  	transform: translate(50%, -50%);
+  	right: -30px;
 }
 
 .timeline ul li:nth-child(even)::before {
-  transform: translate(-50%, -50%);
-  left: -30px;
+  	transform: translate(-50%, -50%);
+  	left: -30px;
 }
+
+/*  KONTAKTNÝ FORMULÁR   */
+section {
+   	height: 115vh;
+   	width: 100%;
+   	background-color: #111;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+} 
+
+.container2 {
+	width: 90%;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 20px;
+	box-shadow: 0px 0px 20px #111;
+	background-color: white;
+	border-radius: 8px;
+	margin-bottom: 5px;
+}
+
+.form-group {
+	width: 100%;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.form-group input, .form-group textarea {
+	width: 100%;
+	padding: 5px;
+	font-size: 18px;
+	border: 1px solid rgba(128, 128, 128, 0.199);
+	margin-top: 5px;
+}
+
+textarea {
+	resize: vertical;
+}
+
+button[type="submit"] {
+	width: 100%;
+	border: none;
+	outline: none;
+	padding: 20px;
+	font-size: 24px;
+	border-radius: 8px;
+	color: rgb(27, 166, 247);
+	text-align: center;
+	cursor: pointer;
+	margin-top: 10px;
+	transition: 0.3s ease background-color;
+}
+
+button[type="submit"]:hover {
+  	background-color: rgb(214, 226, 236);
+}
+
+#status {
+ 	width: 90%;
+  	max-width: 500px;
+  	text-align: center;
+  	padding: 10px;
+  	margin: 0 auto;
+  	border-radius: 8px;
+}
+
+#status.success {
+  	background-color: rgb(211, 250, 153);
+  	animation: status 4s ease forwards;
+}
+
+#status.error {
+  	background-color: rgb(250, 129, 92);
+  	color: white;
+  	animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  	0% {
+    	opacity: 1;
+    	pointer-events: all;
+  	}
+  	90% {
+    	opacity: 1;
+    	pointer-events: all;
+  	}
+  	100% {
+    	opacity: 0;
+    	pointer-events: none;
+  	}
+}
+
+/*  PATIČKA   */
+.footer {
+	background-color: white;
+}
+
+.footer ul {
+	padding: 0;
+	list-style: none;
+	font-size: 16px;
+	line-height: 1.6;
+	margin-top: 0;
+}
+
+.footer ul li a {
+	color: inherit;
+	opacity: 0.8;
+}
+
+.footer ul li {
+	display: inline-block;
+	padding: 0 15px;
+}
+
+
+
+
+
 
 

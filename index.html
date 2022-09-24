@@ -2,15 +2,22 @@
 <html lang="SK">
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="Game Name">
-	<meta name="keywords" content="Game Name">
-	<meta name="author" content="Naše mená">
+	<meta name="description" content="Goblin Epic Adventure">
+	<meta name="keywords" content="Goblin Epic Adventure, tímový projekt, kai fpv ucm, kai, fpv, ucm, katedra aplikovanej informatiky">
+	<meta name="author" content="Lukáš Turza, Adam Mečíř, Kristína Brečková, Pavol Lukačka">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Goblin Epic Adventure | Tímový projekt</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/lightbox.min.css">
+
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<script src="js/main.js"></script>
+
 </head>
+
 <body>
 
+<!-- HORNÁ NAVIGÁCIA -->
 <div class="navigacia sticky">
 	<a href="#oprojekte"><b>O projekte</b></a>
 	<a href="#tim"><b>O nás</b></a>
@@ -19,11 +26,11 @@
 	<a href="#kontakt"><b>Kontakt</b></a>
 </div>
 
-<div class="navigacia1">
 <!-- CHARAKTERISTIKA PROJEKTU -->
 <h1 id="oprojekte">O našom projekte</h1>
-<p>Kecy o našom projekte</p>
+<p>V krátkosti predstaviť náš projekt, tu by mohla byť aj hra, v tejto časti by sa hodila background grafiky hry</p>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 <!-- PLÁN PROJEKTU -->
 <h1 id="planprojektu">Plán projektu</h1>
 <p>Týždenne aktualizovaný plán projektu.</p>
@@ -72,11 +79,24 @@
 			</ul>
 		</div>
 	</div>
-</div>
+
 <br><br><br><br>
+
+<!-- GALÉRIA PROGRESU-->
+<h1> Galéria týždenného progresu</h1>
+<h3>1. Týždeň</h3>
+
+<div class="gallery">
+	<a href="obr/grafika_week1_full.jpg" data-lightbox="galeria" data-title="Prvotný návrh goblina"><img src="obr/grafika_week1.jpg" alt="grafikaweek1"></a>
+	<a href="obr/hra_week1_full.png" data-lightbox="galeria" data-title="Pridaná možnosť health-baru"><img src="obr/hra_week1.png" alt="hraweek1"></a>
+	<a href="obr/web_week1_full.png" data-lightbox="galeria" data-title="Sekcia O nás"><img src="obr/web_week1_full.png" alt="webweek1"></a>
+	<a href="obr/menu.png" data-lightbox="galeria" data-title="Návrh menu hry"><img src="obr/menu.png" alt="menu"></a>
+</div>
+<br><br><br><br><br><br>
+
 <!-- SEKCIA O ZÁPISNICIACH-->
 <h1 id="zapisnice">Zápisnice</h1>
-<p>Materiály zo zápisníc</p>
+<p>Materiály zo zápisníc (v PDF)</p>
 <br><br><br><br>
 
 <!-- SEKCIA O NAŠOM TEAME -->
@@ -85,22 +105,23 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="section-title text-container">
-					<h2 id="tim">Náš tím</h2>
+					<h2 id="tim">Spoznaj náš tím</h2>
 					<p>Spoznajte tím ktorý stál pri vývoji hry</p>
 					<p>(Tu dáme nejaký obkec o našom tíme)</p>
 				</div>
 			</div>
+
 			<!-- prvy clen-->
 			<div class="col-md-3">
 				<div class="single-team">
 					<div class="team-img">
-						<img src="test.jpg">
+						<img src="obr/test.jpg" alt="Lukas">
 					</div>
 					<div class="team-info">
 						<h3>Lukáš Turza</h3>
-						<p>Programovanie + programovanie webu</p>
+						<p>Programovanie hry a webu</p>
 					</div>
-					<p>Programovane hry a tvorba webu.</p>
+					<p>Zodpovedá za fungovanie webu.</p>
 				</div>
 			</div>
 		
@@ -108,13 +129,13 @@
 		<div class="col-md-3">
 				<div class="single-team">
 					<div class="team-img">
-						<img src="test.jpg">
+						<img src="obr/test.jpg" alt="Adam">
 					</div>
 					<div class="team-info">
 						<h3>Adam Mečíř</h3>
-						<p>Programovanie</p>
+						<p>Programovanie </p>
 					</div>
-					<p>Hlavný programátor.</p>
+					<p>Programovanie hry.</p>
 				</div>
 			</div>
 		
@@ -122,13 +143,13 @@
 		<div class="col-md-3">
 				<div class="single-team">
 					<div class="team-img">
-						<img src="test.jpg">
+						<img src="obr/test.jpg" alt="Kika">
 					</div>
 					<div class="team-info">
 						<h3>Kristína Brečková</h3>
 						<p>Grafika</p>
 					</div>
-					<p class="team-text">Grafika hry.</p>
+					<p class="team-text">Grafika + programovanie hry.</p>
 				</div>
 			</div>
 		
@@ -136,7 +157,7 @@
 		<div class="col-md-3">
 				<div class="single-team">
 					<div class="team-img">
-						<img src="test.jpg">
+						<img src="obr/test.jpg" alt="Palo">
 					</div>
 					<div class="team-info">
 						<h3>Pavol Lukačka</h3>
@@ -149,9 +170,11 @@
 	</div>
 </div>
 <br><br><br><br>
+
+<!-- KONTAKT A FORMULÁR -->
 <h1 id="kontakt">Kontakt</h1>
 <p>Našiel si chybu, prípadne nás chceš len kontaktovať? Zanechaj nám správu a my sa ti ozveme! </p>
-<p> Nemusíš vypĺňať svoje priezvisko, stačí meno :) </p>
+<p> Nie je potrebné zadávať priezvisko, stačí ak zadáš len svoje meno :) </p>
 
 <section>
 	<div class="container2">
@@ -184,7 +207,8 @@
 	<div id="status"></div>
 </section>
 
-<script type="text/javascript">
+<!-- JavaScript na fungovanie kontaktného formuláru -->
+<script>
 window.addEventListener("DOMContentLoaded", function() {
 
 	var form = document.getElementById("formular");
@@ -193,7 +217,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	function success() {
 		form.reset();
 		status.classList.add("success");
-		status.innerHTML = "Ďakujeme!";
+		status.innerHTML = "Ďakujeme";
 	}
 
 	function error() {
@@ -222,13 +246,15 @@ window.addEventListener("DOMContentLoaded", function() {
   };
   xhr.send(data);
 }
-
 </script>
 
-<section class="footer">
-	<ul class="list">
+<!-- PATIČKA -->
+<footer>
+	<div class="footer-content">
+		<a href="#top"><h3>Goblin Epic Adventure</h3></a>
+		<ul class="list">
 		<li>
-			<a href="https://kai.fpv.ucm.sk/" target="_blank">Katedra aplikovanej informatiky</a>
+			<a href="https://kai.fpv.ucm.sk/" target="_blank">Katedra API FPV UCM</a>
 		</li>
 
 		<li>
@@ -236,17 +262,22 @@ window.addEventListener("DOMContentLoaded", function() {
 		</li>
 
 		<li>
-			<a href="https://github.com" target="_blank">Pozri kód na GitHube</a>
+			<a href="https://github.com/Luktur/timovyprojekt" target="_blank">Pozri kód na GitHube</a>
 		</li>
 	</ul>
-</section>
+	</div>
 
+	<div class="footer-bottom">
+		<p>Vytvoril Lukáš Turza, Adam Mečiř, Kristína Brečková, Pavol Lukačka Ⓒ 2022 </p>
+	</div>
+</footer>
+
+<!-- V hornej časti obrazovky animácia - keď sa presuniem na inú stránku a túto nechám zapnutú na pozadí, zobrazi sa text "Nechceš sa vrátiť?"-->
 <script>
       var currentTitle = document.title;
       window.onblur = function () { document.title = 'Nechceš sa vrátiť? 😃 '; }
       window.onfocus = function () { document.title = currentTitle; }
 </script>
-
 
 </body>
 </html>

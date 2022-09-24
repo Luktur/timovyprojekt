@@ -390,7 +390,73 @@ footer {
 	transform: scale(1.1)
 }
 
+/*  DOKUMENTY   */
 
+.dokumenty {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.btn {
+	border: 1.6px solid black;
+	background: none;
+	padding: 12px 20px;
+	font-size: 24px;
+	cursor: pointer;
+	margin: 10px;
+	transition: 0.9s;
+	position: relative;
+	overflow: hidden;
+}
+
+.btn1, .btn2 {
+	color: black;
+}
+
+.btn3, .btn4 {
+	color: black;
+}
+
+.btn1:hover, .btn2:hover {
+	color: white;
+}
+
+.btn3:hover, .btn4:hover {
+	color: black;
+}
+
+.btn::before {
+  	content: "";
+ 	position: absolute;
+  	left: 0;
+  	width: 100%;
+  	height: 0%;
+  	background: black;
+  	z-index: -1;
+  	transition: 0.8s;
+}
+
+.btn1::before,.btn3::before {
+  	top: 0;
+  	border-radius: 0 0 10% 10%;
+}
+
+.btn2::before,.btn4::before {
+  	bottom: 0;
+  	bottom-order-radius: 10% 10% 0 0;
+}
+
+.btn3::before,.btn4::before {
+ 	height: 200%;
+}
+
+.btn1:hover::before,.btn2:hover::before {
+  	height: 200%;
+}
+
+.btn3:hover::before,.btn4:hover::before{
+  	height: 0%;
+}
 
 
 

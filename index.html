@@ -1,3 +1,7 @@
+<!-- VERZIA 27.09.2022 -->
+<!-- http://goblinepicadventure.8u.cz/ -->
+<!-- https://github.com/Luktur/timovyprojekt -->
+
 <!DOCTYPE html>
 <html lang="SK">
 <head>
@@ -10,6 +14,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="obr/boblin_2.ico">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
 <script src="js/lightbox-plus-jquery.min.js"></script>
 <script src="js/main.js"></script>
@@ -27,10 +32,22 @@
 	<a href="#kontakt"><b>Kontakt</b></a>
 </div>
 
+<!-- ŠÍPKA
+<div class="arrow">
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+-->
+
 <!-- CHARAKTERISTIKA PROJEKTU -->
 <h1 id="oprojekte">O našom projekte</h1>
 <p>V krátkosti predstaviť náš projekt, tu by mohla byť aj hra, v tejto časti by sa hodila background grafiky hry</p>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<!-- Tu by sa mohla nachádzať samotná hra + ako background bude nejaký art z hry -->
+<!-- Tu dať medzery ak bude šípka -->
 
 <!-- PLÁN PROJEKTU -->
 <h1 id="planprojektu">Plán projektu</h1>
@@ -83,7 +100,7 @@
 
 <br><br><br><br>
 
-<!-- GALÉRIA PROGRESU-->
+<!-- GALÉRIA PROGRESU -->
 <h1> Galéria týždenného progresu</h1>
 <h3>1. Týždeň</h3>
 
@@ -95,7 +112,7 @@
 </div>
 <br><br><br>
 
-<!-- SEKCIA O ZÁPISNICIACH-->
+<!-- SEKCIA O DOKUMENTOCH -->
 <h1 id="dokumenty">Dokumenty</h1>
 <p>Všetky materiály ktoré boli použité na tvorbu projektu (v PDF)</p>
 <div class="dokumenty">
@@ -242,20 +259,25 @@ window.addEventListener("DOMContentLoaded", function() {
 })
 
 	function ajax(method, url, data, success, error) {
-  var xhr = new XMLHttpRequest();
-  xhr.open(method, url);
-  xhr.setRequestHeader("Accept", "application/json");
-  xhr.onreadystatechange = function () {
+ 	 	var xhr = new XMLHttpRequest();
+  		xhr.open(method, url);
+  		xhr.setRequestHeader("Accept", "application/json");
+  		xhr.onreadystatechange = function () {
+
     if (xhr.readyState !== XMLHttpRequest.DONE) return;
     if (xhr.status === 200) {
-      success(xhr.response, xhr.responseType);
-    } else {
-      error(xhr.status, xhr.response, xhr.responseType);
+      	success(xhr.response, xhr.responseType);
+    } 
+    else {
+      	error(xhr.status, xhr.response, xhr.responseType);
     }
   };
-  xhr.send(data);
+  	xhr.send(data);
 }
 </script>
+
+<!-- ŠÍPKA HORE -->
+<a class="chodhore" href="#"><i class="fas fa-arrow-up"></i></a>
 
 <!-- PATIČKA -->
 <footer>
@@ -281,7 +303,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	</div>
 </footer>
 
-<!-- V hornej časti obrazovky animácia - keď sa presuniem na inú stránku a túto nechám zapnutú na pozadí, zobrazi sa text "Nechceš sa vrátiť?"-->
+<!-- V hornej časti obrazovky animácia - keď sa presuniem na inú stránku a túto nechám zapnutú na pozadí, zobrazi sa text "Nechceš sa vrátiť?" -->
 <script>
       var currentTitle = document.title;
       window.onblur = function () { document.title = 'Nechceš sa vrátiť? 😃 '; }

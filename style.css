@@ -1,13 +1,21 @@
+/* VERZIA 27.09.2022 */
+/* http://goblinepicadventure.8u.cz/ */
+/* https://github.com/Luktur/timovyprojekt */
+
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome';
 @import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
 
-/*  Stránka ponúka plynulý presun   */ 
+/*  VEĽKÉ PÍSMENÁ -> jednotlivé prvky na stránke a ich opis  */ 
+/*  malé písmená -> komenty  */ 
+
+/*  Stránka ponúka plynulý presun  */ 
 html {
 	scroll-behavior: smooth;
 }
-/*  PÍSMO   */ 
+
+/*  PÍSMO  */ 
 h1 {
 	text-align: center;
 }
@@ -32,7 +40,7 @@ body {
   	overflow-x: hidden; 
 }
 
-/*  NAVIGÁCIA    */ 
+/*  NAVIGÁCIA  */ 
 .navigacia {
 	overflow: hidden;
 	border-style: outset;
@@ -48,7 +56,7 @@ body {
 	font-family: Century Gothic;
 }
 
-/*  Horné menu aby bolo nad textom, uživateľ si môže jednoducho zvoliť podsekciu */ 
+/*  Horné menu aby bolo nad textom, uživateľ si môže jednoducho zvoliť podsekciu  */ 
 .sticky {
   	position: -webkit-sticky; 
   	position: sticky;
@@ -57,12 +65,12 @@ body {
  	z-index: 1;
 }
 
-/*  SEKCIA O NÁS    */ 
+/*  SEKCIA O NÁS  */ 
 .section-title {
 	margin: 3% 0;
 }
 
-/*  Písmo   */ 
+/*  Písmo  */ 
 .section.title p {
 	text-transform: uppercase;
 	font-weight: bold;
@@ -77,7 +85,7 @@ body {
 	box-shadow: 5px 5px 15px #000;
 }
 
-/*  Úprava obrázkov v sekcií "O nás"   */ 
+/*  Úprava obrázkov v sekcií "O nás"  */ 
 .team-img {
 	position: sticky;
 	z-index: -1;
@@ -194,7 +202,7 @@ body {
   	width: 2px;
   	height: 100%;
   	background-color: white;
-  }
+}
 
 .timeline ul li:nth-child(odd)::before {
   	transform: translate(50%, -50%);
@@ -206,7 +214,7 @@ body {
   	left: -30px;
 }
 
-/*  KONTAKTNÝ FORMULÁR   */
+/*  KONTAKTNÝ FORMULÁR  */
 section {
    	height: 115vh;
    	width: 100%;
@@ -250,18 +258,21 @@ button[type="submit"] {
 	width: 100%;
 	border: none;
 	outline: none;
+	background: white;
 	padding: 20px;
 	font-size: 24px;
 	border-radius: 8px;
-	color: gray;
+	color: black;
 	text-align: center;
 	cursor: pointer;
 	margin-top: 10px;
-	transition: 0.3s ease background-color;
+	transition: 0.5s ease background-color;
+	border: 1.6px solid black;
 }
 
 button[type="submit"]:hover {
-  	background-color: rgb(214, 226, 226);
+  	background-color: black;
+  	color: white;
 }
 
 #status {
@@ -299,8 +310,7 @@ button[type="submit"]:hover {
   	}
 }
 
-/*  PATIČKA   */
-
+/*  PATIČKA  */
 footer {
 	background: #111;
 	height: auto;
@@ -354,7 +364,6 @@ footer {
 	font-weight: 200;
 }
 
-
 .footer-content ul {
 	padding: 0;
 	list-style: none;
@@ -373,8 +382,7 @@ footer {
 	padding: 0 25px;
 }
 
-/*  GALERIA   */
-
+/*  GALERIA  */
 .gallery {
 	margin: 10px 50px;
 }
@@ -390,8 +398,7 @@ footer {
 	transform: scale(1.1)
 }
 
-/*  DOKUMENTY   */
-
+/*  DOKUMENTY  */
 .dokumenty {
 	text-align: center;
 	margin-top: 50px;
@@ -458,6 +465,89 @@ footer {
   	height: 0%;
 }
 
+/*  Keby sme tam chceli pridať animáciu šípky
+.arrow {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+        
+.arrow span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-bottom: 5px solid #06A8FF;
+    border-right: 5px solid #06A8FF;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: scroll1 2s infinite;
+}
+        
+.arrow span:nth-child(2) {
+    animation-delay: -.2s;
+}
+        
+.arrow span:nth-child(3) {
+    animation-delay: -.4s;
+}
+        
+@keyframes scroll1 {
+0% {
+    opacity: 1;
+    transform: rotate(45deg) translate(-20px, -20px);
+    border-bottom: 5px solid #ff6a06;
+    border-right: 5px solid #ff9b06;
+}
 
+50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(-20px, -20px);
+}
 
+100% {
+    opacity: 1;
+   	transform: rotate(45deg) translate(-20px, -20px);
+ }
+}
+*/
 
+/*  ŠÍPKA NA KONCI  */
+.chodhore {
+	width: 50px;
+	height: 50px;
+	background: white;
+	bottom: 40px;
+	right: 50px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	color: black;
+	font-size: 24px;
+	position: absolute;
+    top: 530%; /*  TOTO MENIŤ PODLA ROZLÍŠENIA OBRAZOVKY  */
+    left: 96%;
+}
+
+.chodhore:hover {
+	background-color: black;
+	color: white;
+	border: 1px solid white;
+}
+
+/*  VLASTNÝ SCROLLBAR  */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgb(105,105,105);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(192,192,192);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(192,192,192);
+}

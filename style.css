@@ -7,15 +7,15 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
 
-/*  VEĽKÉ PÍSMENÁ -> jednotlivé prvky na stránke a ich opis  */ 
-/*  malé písmená -> komenty  */ 
+/*  VELKE PISMENA -> jednotlive prvky na stranke a ich opis  */ 
+/*  male pismena -> komenty  */ 
 
-/*  Stránka ponúka plynulý presun  */ 
+/*  Stranka ponuka plynuly presun z horneho menu  */ 
 html {
 	scroll-behavior: smooth;
 }
 
-/*  PÍSMO  */ 
+/*  PISMO  */ 
 h1 {
 	text-align: center;
 }
@@ -35,12 +35,12 @@ p {
 	color: black;
 }
 
-/*  Aby nemusel byť vidieť spodný "scrollbar"  */ 
+/*  Aby nebol viditelny spodny "scrollbar"  */ 
 body {
   	overflow-x: hidden; 
 }
 
-/*  NAVIGÁCIA  */ 
+/*  NAVIGACIA  */ 
 .navigacia {
 	overflow: hidden;
 	border-style: outset;
@@ -56,7 +56,7 @@ body {
 	font-family: Century Gothic;
 }
 
-/*  Horné menu aby bolo nad textom, uživateľ si môže jednoducho zvoliť podsekciu  */ 
+/*  Horne menu aby bolo nad textom, uzivatel si moze jednoducho zvolit podsekciu  */ 
 .sticky {
   	position: -webkit-sticky; 
   	position: sticky;
@@ -65,12 +65,12 @@ body {
  	z-index: 1;
 }
 
-/*  SEKCIA O NÁS  */ 
+/*  SEKCIA O NAS  */ 
 .section-title {
 	margin: 3% 0;
 }
 
-/*  Písmo  */ 
+/*  Pismo  */ 
 .section.title p {
 	text-transform: uppercase;
 	font-weight: bold;
@@ -85,7 +85,7 @@ body {
 	box-shadow: 5px 5px 15px #000;
 }
 
-/*  Úprava obrázkov v sekcií "O nás"  */ 
+/*  Uprava obrazkov v sekcii "O nas"  */ 
 .team-img {
 	position: sticky;
 	z-index: -1;
@@ -112,7 +112,7 @@ body {
 	height: 150px;
 }
 
-/*  SEKCIA PLÁNU  */
+/*  SEKCIA PLANU  */
 *{
 	margin: 0;
 	padding: 0;
@@ -214,7 +214,7 @@ body {
   	left: -30px;
 }
 
-/*  KONTAKTNÝ FORMULÁR  */
+/*  KONTAKTNY FORMULAR  */
 section {
    	height: 115vh;
    	width: 100%;
@@ -310,7 +310,7 @@ button[type="submit"]:hover {
   	}
 }
 
-/*  PATIČKA  */
+/*  PATICKA  */
 footer {
 	background: #111;
 	height: auto;
@@ -465,7 +465,7 @@ footer {
   	height: 0%;
 }
 
-/*  Keby sme tam chceli pridať animáciu šípky
+/*  Keby sme tam chceli pridat animaciu sipky
 .arrow {
     position: absolute;
     top: 93%;
@@ -512,7 +512,7 @@ footer {
 }
 */
 
-/*  ŠÍPKA NA KONCI  */
+/*  SIPKA NA KONCI  */
 .chodhore {
 	width: 50px;
 	height: 50px;
@@ -525,7 +525,7 @@ footer {
 	color: black;
 	font-size: 24px;
 	position: absolute;
-    top: 530%; /*  TOTO MENIŤ PODLA ROZLÍŠENIA OBRAZOVKY  */
+    top: 530%; /*  TOTO MENIT PODLA ROZLISENIA OBRAZOVKY  */
     left: 96%;
 }
 
@@ -535,7 +535,7 @@ footer {
 	border: 1px solid white;
 }
 
-/*  VLASTNÝ SCROLLBAR  */
+/*  VLASTNY SCROLLBAR  */
 ::-webkit-scrollbar {
 	width: 10px;
 }

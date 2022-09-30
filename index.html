@@ -1,4 +1,4 @@
-<!-- VERZIA 27.09.2022 -->
+<!-- VERZIA 30.09.2022 -->
 <!-- http://goblinepicadventure.8u.cz/ -->
 <!-- https://github.com/Luktur/timovyprojekt -->
 
@@ -8,7 +8,7 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Goblin Epic Adventure">
 	<meta name="keywords" content="Goblin Epic Adventure, tímový projekt, kai fpv ucm, kai, fpv, ucm, katedra aplikovanej informatiky">
-	<meta name="author" content="Lukáš Turza, Adam Mečíř, Kristína Brečková, Pavol Lukačka">
+	<meta name="author" content="Lukáš Turza">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Goblin Epic Adventure | Tímový projekt</title>
 	<link rel="shortcut icon" type="image/x-icon" href="obr/boblin_2.ico">
@@ -57,21 +57,11 @@
 		<ul>
 			<li>
 				<div class="timeline-content">
-					<h1>Prvý týždeň ✔️</h1>
+					<h1>Prvý a druhý týždeň ✔️</h1>
 					<p><b>Kika:</b> textúry goblin, hráč, kuchyňa ✔️</p>
 					<p><b>Paľo:</b> pozrie sa na zvuk a pomoc ✔️</p>
 					<p><b>Adam:</b> menu, ak stihneme pohyb kuchyňa ✔️</p>
 					<p><b>Lukáš:</b> základ stránky ✔️</p>
-					</div>
-				</li>
-
-				<li>
-				<div class="timeline-content">
-					<h1>Druhý týždeň</h1>
-					<p><b>Kika:</b> </p>
-					<p><b>Paľo:</b> </p>
-					<p><b>Adam:</b> </p>
-					<p><b>Lukáš:</b> </p>
 					</div>
 				</li>
 
@@ -94,6 +84,16 @@
 					<p><b>Lukáš:</b> </p>
 					</div>
 				</li>
+
+				<li>
+				<div class="timeline-content">
+					<h1>Piaty týždeň</h1>
+					<p><b>Kika:</b> </p>
+					<p><b>Paľo:</b> </p>
+					<p><b>Adam:</b> </p>
+					<p><b>Lukáš:</b> </p>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -102,13 +102,19 @@
 
 <!-- GALERIA PROGRESU -->
 <h1> Galéria týždenného progresu</h1>
-<h3>1. Týždeň</h3>
+<p>Na prechádzanie fotografií použi šípky</p>
+<h3>1. - 2. Týždeň</h3>
 
 <div class="gallery">
-	<a href="obr/grafika_week1_full.jpg" data-lightbox="galeria" data-title="Prvotný návrh goblina"><img src="obr/grafika_week1.jpg" alt="grafikaweek1"></a>
+	<a href="obr/player_full.jpg" data-lightbox="galeria" data-title="Prvotný návrh postavy"><img src="obr/player.jpg" alt="player"></a>
 	<a href="obr/hra_week1_full.png" data-lightbox="galeria" data-title="Pridaná možnosť health-baru"><img src="obr/hra_week1.png" alt="hraweek1"></a>
-	<a href="obr/web_week1_full.png" data-lightbox="galeria" data-title="Sekcia O nás"><img src="obr/web_week1_full.png" alt="webweek1"></a>
-	<a href="obr/menu.png" data-lightbox="galeria" data-title="Návrh menu hry"><img src="obr/menu.png" alt="menu"></a>
+	<a href="obr/kuchyna_full.png" data-lightbox="galeria" data-title="Návrh kuchyne"><img src="obr/kuchyna_1.png" alt="kuchyna"></a>
+	<a href="obr/menu_full.png" data-lightbox="galeria" data-title="Návrh menu hry"><img src="obr/menu.png" alt="menu"></a>
+	<a href="obr/goblin_epic_adventure_logo_full.png" data-lightbox="galeria" data-title="Oficiálne logo hry"></a>
+	<a href="obr/boblin_full.png" data-lightbox="galeria" data-title="Postavička boblina"></a>
+	<a href="obr/pohyb.png" data-lightbox="galeria" data-title="Animácia pohybu postavy"></a>
+	<a href="obr/web_week1_full.png" data-lightbox="galeria" data-title="Sekcia na webe 'O nás'"></a>
+	<a href="obr/web_week1_2.png" data-lightbox="galeria" data-title="Predstava, ako by mal vyzerať týždenný plán projektu"></a>
 </div>
 <br><br><br>
 
@@ -119,8 +125,8 @@
 	<button class="btn btn1">Dokumentácia</button>
 	<button class="btn btn1">Zápisnice</button>
 	<button class="btn btn1">Motivačný list</button>
-	<button class="btn btn1">Modely postáv</button>
-	<button class="btn btn1">Zdrojový kód</button>
+	<button class="btn btn1" onClick="location.href='modely_postav.pdf'">Modely postáv</button>
+	<button class="btn btn1" onClick="location.href='https://github.com/Luktur/timovyprojekt'">Zdrojový kód</button>
 </div>
 
 <br><br><br><br>
@@ -282,7 +288,7 @@ window.addEventListener("DOMContentLoaded", function() {
 <!-- PATICKA -->
 <footer>
 	<div class="footer-content">
-		<a href="#top"><h3>Goblin Epic Adventure</h3></a>
+		<a href="#top" style="text-decoration: none;"><h3>Goblin Epic Adventure</h3></a>
 		<ul class="list">
 		<li>
 			<a href="https://kai.fpv.ucm.sk/" target="_blank">Katedra API FPV UCM</a>

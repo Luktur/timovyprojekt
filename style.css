@@ -1,4 +1,4 @@
-/* VERZIA 28.09.2022 */
+/* VERZIA 30.09.2022 */
 /* http://goblinepicadventure.8u.cz/ */
 /* https://github.com/Luktur/timovyprojekt */
 
@@ -347,7 +347,7 @@ footer {
 .footer-bottom {
 	background: #000;
 	width: 100vw;
-	padding: 20px 0;
+	padding: 7px 0;
 	text-align: center;
 }
 
@@ -402,6 +402,12 @@ footer {
 .dokumenty {
 	text-align: center;
 	margin-top: 50px;
+}
+
+.dokumenty a {
+	color: inherit;
+	opacity: 0.8;
+	text-decoration: none; 
 }
 
 .btn {

@@ -1,3 +1,4 @@
+
 window.addEventListener("DOMContentLoaded", function() {
 
 	var form = document.getElementById("formular");
@@ -37,7 +38,7 @@ window.addEventListener("DOMContentLoaded", function() {
 }
 
 
-
+//lista
     var currentTitle = document.title;
     window.onblur = function () { document.title = 'Nechceš sa vrátiť? 😃 '; }
     window.onfocus = function () { document.title = currentTitle; }
@@ -159,3 +160,14 @@ window.addEventListener("DOMContentLoaded", function() {
     root.butter = new Butter();
 
 })(this);
+
+
+//preloader
+var loader = document.getElementById("preloader");
+
+	window.addEventListener('load', function(load) {
+  		window.removeEventListener('load', load, false);               
+  		setTimeout(function(){loader.style.display = 'none'},4000);
+
+	},false);
+

@@ -52,7 +52,7 @@ body {
 .navigacia a {
 	float: left;
 	color: black;
-	background: white;
+	background: #ebeef1;
 	text-align: left;
 	padding: 5px 100px;
 	/* text-decoration: none; */ /* toto pripadne doplnit */

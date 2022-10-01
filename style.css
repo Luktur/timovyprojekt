@@ -38,6 +38,7 @@ p {
 /*  Aby nebol viditelny spodny "scrollbar"  */ 
 body {
   	overflow-x: hidden; 
+	background: #ebeef1;
 }
 
 /*  NAVIGACIA  */ 

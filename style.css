@@ -534,7 +534,7 @@ footer {
 	color: black;
 	font-size: 24px;
 	position: absolute;
-    top: 654%; /*  TOTO MENIT PODLA ROZLISENIA OBRAZOVKY  */
+    top: 755%; /*  TOTO MENIT PODLA ROZLISENIA OBRAZOVKY  */
     left: 96%;
 }
 
@@ -614,4 +614,103 @@ footer {
 .loader img {
 	width: 100%;
 	height: auto;
+}
+
+/*  VIDEO NA POZADI */
+.videopozadie {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+	position: relative;
+	padding: 0 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content1 {
+	text-align: center;
+}
+
+.content1 h1 {
+	font-size: 160px;
+	color: #fff;
+	font-weight: 600;
+	transition: 0.8s;
+}
+
+.content1 h1:hover {
+	-webkit-text-stroke: 2px #fff;
+	color: transparent;
+}
+
+.content1 a {
+	text-decoration: none;
+	display: inline-block;
+	color: #fff;
+	font-size: 24px;
+	border: 2px solid #fff;
+	padding: 14px 70px;
+	border-radius: 50px;
+	margin-top: 20px;
+}
+
+.video {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+	.video {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9) {
+	.video {
+		width: auto;
+		height: 100%;
+	}
+}
+
+/*  ANIMACIA MYSI  */
+.scroll-downs {
+  	position: absolute;
+  	top: 70%;
+  	right: 0;
+  	bottom: 0;
+  	left: 90%;
+  	margin: auto;
+  	width :34px;
+  	height: 55px;
+}
+
+.mys {
+  	width: 3px;
+  	padding: 10px 15px;
+  	height: 35px;
+  	border: 2px solid #fff;
+  	border-radius: 25px;
+  	opacity: 0.75;
+  	box-sizing: content-box;
+}
+
+.scroller {
+  	width: 3px;
+ 	height: 10px;
+  	border-radius: 25%;
+  	background-color: #fff;
+  	animation-name: scroll;
+  	animation-duration: 2.2s;
+  	animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  	animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  	0% { opacity: 0; }
+  	10% { transform: translateY(0); opacity: 1; }
+  	100% { transform: translateY(15px); opacity: 0;}
 }

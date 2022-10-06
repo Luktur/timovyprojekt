@@ -1,4 +1,4 @@
-/* VERZIA 2.10.2022 */
+/* VERZIA 6.10.2022 */
 /* http://goblinepicadventure.online/ */
 /* https://github.com/Luktur/timovyprojekt */
 
@@ -51,14 +51,14 @@ body {
 }
 
 .navigacia a {
-	float: left;
-	color: black;
-	background: #ebeef1;
 	text-align: center;
-	padding: 4px 100px;
-	/* text-decoration: none; */ /* toto pripadne doplnit */
-	font-size: 23px;
+  	padding: 4px 100px;
+  	font-size: 23px;
+	color: black;
+	background: #ebeef1;	
 	font-family:  Copperplate, Papyrus, fantasy;
+	font-weight: normal;  /* font-weight: normal; */  /* skusit toto na webe */
+	text-align: center;
 }
 
 /*  Horne menu aby bolo nad textom, uzivatel si moze jednoducho zvolit podsekciu  */ 
@@ -132,6 +132,7 @@ body {
 	justify-content: center;
 	padding: 100px 0;
 	background-color: #111;
+	z-index: 1;
 }
 
 .timeline {
@@ -391,12 +392,13 @@ footer {
 
 /*  GALERIA  */
 .gallery {
+	/* margin: 10px 50px; */
 	margin: 10px 50px;
 }
 
 .gallery img {
-	width: 350px;
-	padding: 8px;
+	width: 350px; /* 350px */
+	padding: 12px;
 	transition: 2s; 
 }
 
@@ -530,16 +532,14 @@ footer {
 	width: 50px;
 	height: 50px;
 	background: white;
-	bottom: 40px;
-	right: 50px;
+	bottom: 45px;
+	right: 20px;
 	text-decoration: none;
 	text-align: center;
 	line-height: 50px;
 	color: black;
 	font-size: 24px;
-	position: absolute;
-    top: 755%; /*  TOTO MENIT PODLA ROZLISENIA OBRAZOVKY  */
-    left: 96%;
+	position: fixed;
 }
 
 .chodhore:hover {
@@ -684,10 +684,10 @@ footer {
 /*  ANIMACIA MYSI  */
 .scroll-downs {
   	position: absolute;
-  	top: 70%;
-  	right: 0;
+  	top: 75%;
+  	right: 90%;
   	bottom: 0;
-  	left: 90%;
+  	left: 0;
   	margin: auto;
   	width :34px;
   	height: 55px;
@@ -719,4 +719,3 @@ footer {
   	10% { transform: translateY(0); opacity: 1; }
   	100% { transform: translateY(15px); opacity: 0;}
 }
-

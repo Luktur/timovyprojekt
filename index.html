@@ -1,4 +1,4 @@
-<!-- VERZIA 7.10.2022 -->
+<!-- VERZIA 8.10.2022 -->
 <!-- http://goblinepicadventure.online -->
 <!-- https://github.com/Luktur/timovyprojekt -->
 
@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/lightbox.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link href="http://fonts.cdnfonts.com/css/hiskyflipper" rel="stylesheet">
 
 <script src="js/lightbox-plus-jquery.min.js"></script>
 <script src="js/main.js"></script>
@@ -67,11 +68,38 @@
 	</div>
 </div>
 
+<!--  kurzor
+<div class="cursor"></div>
+
+<script>
+	const cursor = document.querySelector(".cursor");
+	var timeout;
+
+	document.addEventListener("mousemove", (e) => {
+		let x = e.clientX;
+		let y = e.clientY;
+
+		cursor.style.top = y + "px";
+		cursor.style.left = x + "px";	
+		cursor.style.display = "block";
+
+		function mouseStopped() {
+			cursor.style.display = "none"
+		}
+		clearTimeout(timeout);
+		timeout = setTimeout(mouseStopped, 1000);
+	});
+
+	document.addEventListener("mouseout", () => {
+		cursor.style.display = "none";
+	});
+</script>
+-->
+
 <!-- CHARAKTERISTIKA PROJEKTU -->
 <h1 id="oprojekte">🎮 O našom projekte 🎮</h1>
 <p>V krátkosti predstaviť náš projekt, tu by mohla byť aj hra, v tejto časti by sa hodila background grafiky hry</p>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 
 <!-- Tu by sa mohla nachadzat samotna hra + ako background bude nejaky art z hry -->
 <!-- Tu dat medzery ak bude sipka -->

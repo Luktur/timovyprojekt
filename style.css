@@ -1,4 +1,4 @@
-/* VERZIA 7.10.2022 */
+/* VERZIA 8.10.2022 */
 /* http://goblinepicadventure.online/ */
 /* https://github.com/Luktur/timovyprojekt */
 
@@ -60,7 +60,7 @@ body {
 	color: black;
 	background: #ebeef1;	
 	font-family: 'HISKYFLIPPERHIBOLD', sans-serif;
-	font-weight: normal;  /* font-weight: normal; */  /* skusit toto na webe */
+	font-weight: normal;  
 }
 
 /*  Horne menu aby bolo nad textom, uzivatel si moze jednoducho zvolit podsekciu  */ 
@@ -724,3 +724,40 @@ footer {
   	100% { transform: translateY(15px); opacity: 0;}
 }
 
+/* kurzor
+.cursor {
+	z-index: 11;
+	position: fixed;
+	background: #8BFD00;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	pointer-events: none;
+	box-shadow: 0 0 20px #8BFD00,
+				0 0 60px #8BFD00,
+				0 0 100px #8BFD00;
+	animation: colors 5s infinite; 
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+@keyframes colors {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}
+
+.cursor:before {
+	content: "";
+	position: absolute;
+	background: #2696E8;
+	width: 50px;
+	height: 50px;
+	opacity: 0.2;
+	transform: translate(-30%, -30%);
+	border-radius: 50%;
+}
+*/

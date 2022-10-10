@@ -1,4 +1,4 @@
-/* VERZIA 9.10.2022 */
+/* VERZIA 10.10.2022 */
 /* http://goblinepicadventure.online/ */
 /* https://github.com/Luktur/timovyprojekt */
 
@@ -557,16 +557,16 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-	background: rgb(105,105,105);
+	background: black;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: rgb(192,192,192);
+	background: orange;
 	border-radius: 90px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: rgb(192,192,192);
+	background: orange;
 }
 
 /*  PRELOADER  */

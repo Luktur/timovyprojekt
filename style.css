@@ -1,4 +1,4 @@
-/* VERZIA 11.10.2022 */
+/* VERZIA 12.10.2022 */
 /* http://goblinepicadventure.online/ */
 /* https://github.com/Luktur/timovyprojekt */
 
@@ -36,7 +36,7 @@ p {
 	color: black;
 }
 
-/*  Aby nebol viditelny spodny "scrollbar"  */ 
+/*  Aby nebol viditelny spodny "scrollbar" + farba pozadia  */ 
 body {
   	overflow-x: hidden; 
   	background: #ebeef1;
@@ -343,6 +343,8 @@ footer {
 	text-transform: capitalize;
 	line-height: 7rem;
 	color: white;
+	font-family: 'HISKYFLIPPERHIBOLD', sans-serif;
+	font-weight: normal; 
 }
 
 .footer-content p {
@@ -432,6 +434,7 @@ footer {
 	transition: 0.9s;
 	position: relative;
 	overflow: hidden;
+	box-shadow: 0px 0px 8px black; 
 }
 
 .btn1, .btn2 {
@@ -543,6 +546,7 @@ footer {
 	color: black;
 	font-size: 24px;
 	position: fixed;
+	box-shadow: 0px 0px 8px black;
 }
 
 .chodhore:hover {
@@ -663,6 +667,7 @@ footer {
 	padding: 14px 70px;
 	border-radius: 50px;
 	margin-top: 20px;
+	box-shadow: 0px 0px 10px white;
 }
 
 .video {

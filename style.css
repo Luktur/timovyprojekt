@@ -1,4 +1,4 @@
-/* VERZIA 10.10.2022 */
+/* VERZIA 11.10.2022 */
 /* http://goblinepicadventure.online/ */
 /* https://github.com/Luktur/timovyprojekt */
 
@@ -762,3 +762,146 @@ footer {
 	border-radius: 50%;
 }
 */
+
+/*   POSTAVY    */
+.container4 {
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	height: 60vh;
+}
+
+.card {
+	position: relative;
+	width: 500px;
+	height: 380px;
+	border-radius: 40px;
+	transition: 0.5s;
+	transition-delay: 0.5s;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	float: left;
+	margin: 10px;
+	top: 0;
+}
+
+.card:hover {
+	width: 600px;
+	transition-delay: 0s;
+}
+
+.card .circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.card .circle::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--clr);
+	clip-path: circle(150px at center);
+	transition: 1.1s;
+}
+
+.card:hover .circle:before {
+	clip-path: circle(500px at center);
+}
+
+.card .circle .boss {
+	position: relative;
+	width: 200px;	
+	transition: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.card:hover .circle .boss {
+	transform: scale(0);
+	transition-delay: 0s;
+}
+
+.content {
+	position: relative;
+	width: 50%;
+	left: 20%;
+	padding: 20px 20px 20px 40px;
+	opacity: 0;
+	transition: 0.5s;
+	visibility: hidden;
+}
+
+.card:hover .content {
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0.5s;
+}
+
+.content h2 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	line-height: 1em;
+}
+
+.content p {
+	color: #fff;
+	font-size: 1em;
+}
+
+.card .boss_img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) scale(0);
+	height: 600px;
+	transition: 0.4s;
+	transition-delay: 0s;
+}
+
+.card:hover .boss_img {
+	left: 72%;
+	transform: translate(-50%,-50%) scale(1);
+	transition-delay: 0.5s;
+}
+
+
+@media (max-width: 991px)
+{
+	.card {
+		width: auto;
+		max-width: 350px;
+		align-items: flex-start;
+	}
+
+	.card:hover {
+		height: 600px;
+	}
+
+	.card:hover .boss_img {
+		top: initial;
+		bottom: 30px;
+		left: 50%;
+		transform: translate(-50%,0%) scale(1);
+		height: 300px;
+	}
+
+	.card .content {
+		width: 100%;
+		left: 0;
+		padding: 40px;
+	}
+}

@@ -123,6 +123,23 @@
 	</div>
 </div>
 
+<!-- VIDEO PREHRAVAC -->
+<div class="videocontainer1">
+	
+	<div class="c-video1">
+		<video class="video2" src="vid/videjko1.mp4"></video>
+		<div class="controls1">
+			<div class="orange-bar1">
+				<div class="orange-juice1"></div>
+			</div>
+			<div class="buttons1">
+				<button id="play-pause1"></button>
+			</div>
+		</div>
+	</div>
+	<h1>Pozri gameplay</h1>
+</div>
+
 <!-- Script na fungovanie video prehravacu -->
 <script>
 	var video1 = document.querySelector(".video1");
@@ -149,6 +166,36 @@
 		juice.style.width = juicePos * 100 + "%";
 		if(video1.ended) {
 			btn.className = "play";
+		}
+	});
+</script>
+
+<!-- Script na fungovanie video prehravacu -->
+<script>
+	var video2 = document.querySelector(".video2");
+	var juice1 = document.querySelector(".orange-juice1");
+	var btn1 = document.getElementById("play-pause1");
+
+	function togglePlayPause1() {
+		if(video2.paused) {
+			btn1.className = "pause1";
+			video2.play();
+		}
+		else {
+			btn1.className = "play1";
+			video2.pause();
+		}
+	} 
+
+	btn1.onclick = function() {
+		togglePlayPause1();
+	};
+
+	video2.addEventListener("timeupdate1", function() {
+		var juicePos1 = video2.currentTime / video2.duration;
+		juice1.style.width = juicePos1 * 100 + "%";
+		if(video2.ended) {
+			btn1.className = "play1";
 		}
 	});
 </script>

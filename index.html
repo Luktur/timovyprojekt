@@ -26,6 +26,7 @@
 </head>
 
 <body>
+
 <!-- PRELOADER -->
 <div id="preloader">
 		<div class="loader"><img src="loading1.gif" alt="#"><p>načitavam...</p></div>
@@ -56,45 +57,8 @@
 	<div class="content1">
 		<h1>Goblin Epic Adventure</h1>
 		<a href="#oprojekte">Hraj</a>
-
-<!--
-		<div class="scroll-downs">
-  			<div class="mys">
-    	<div class="scroller"></div>
- 	 		</div>
-		</div>
--->
-
 	</div>
 </div>
-
-<!--  kurzor
-<div class="cursor"></div>
-
-<script>
-	const cursor = document.querySelector(".cursor");
-	var timeout;
-
-	document.addEventListener("mousemove", (e) => {
-		let x = e.clientX;
-		let y = e.clientY;
-
-		cursor.style.top = y + "px";
-		cursor.style.left = x + "px";	
-		cursor.style.display = "block";
-
-		function mouseStopped() {
-			cursor.style.display = "none"
-		}
-		clearTimeout(timeout);
-		timeout = setTimeout(mouseStopped, 1000);
-	});
-
-	document.addEventListener("mouseout", () => {
-		cursor.style.display = "none";
-	});
-</script>
--->
 
 <!-- CHARAKTERISTIKA PROJEKTU -->
 <h1 id="oprojekte">🎮 O našom projekte 🎮</h1>
@@ -105,10 +69,15 @@
 <img src="obr/left1.png" alt="left">
 <img style="float: right;" src="obr/left1.png" alt="left">
 <!-- Background -->
-<br><br><br><br><br><br><br><br><br>
+<br><br>
+
+<!-- Tu by sa mohla nachadzat samotna hra + ako background bude nejaky art z hry -->
+<!-- Obrazky z hry + video gameplay + hudba + link na stiahnutie hry (osobitne ako div) -->
+<!-- Tu by sa dali fotky z hry -->
 
 <!--
- FOTKY Z HRY
+FOTKY Z HRY
+
 <div class="gamegallerycontainer">
 	<div class="arrow l">
 		<img src="obr/prev.png" alt="prev">
@@ -225,7 +194,6 @@
 
 <!-- VIDEO PREHRAVAC PRE DRUHE VIDEO -->
 <div class="videocontainer1">
-	
 	<div class="c-video1">
 		<video class="video2" src="vid/videjko1.mp4"></video>
 		<div class="controls1">
@@ -270,7 +238,7 @@
 	});
 </script>
 
-<!-- Script na fungovanie prveho videa -->
+<!-- Script na fungovanie druheho videa -->
 <script>
 	var video2 = document.querySelector(".video2");
 	var juice1 = document.querySelector(".orange-juice1");
@@ -299,10 +267,6 @@
 		}
 	});
 </script>
-
-
-<!-- Tu by sa mohla nachadzat samotna hra + ako background bude nejaky art z hry -->
-<!-- Obrazky z hry + video gameplay + hudba + link na stiahnutie hry (osobitne ako div) -->
 
 <br><br><br>
 
@@ -429,6 +393,7 @@
 	<a href="obr/web_week1_2.png" data-lightbox="galeria" data-title="(1. Týždeň) Predstava, ako by mal vyzerať týždenný plán projektu"></a>
 </div>
 <br><br>
+
 <h3>2. - 3. Týždeň</h3>
 <div class="gallery">
 	<a href="obr/player_walk_right1.png" data-lightbox="galeria" data-title="(3. Týždeň) Pohyb postavy hráča"><img src="obr/player_walk_right1_small.png" alt="playerwalk"></a>
@@ -562,7 +527,7 @@
 	<div id="status"></div>
 </section>
 
-<!-- JavaScript na fungovanie kontaktneho formularu -->
+<!-- Script na fungovanie kontaktneho formularu -->
 <script>
 window.addEventListener("DOMContentLoaded", function() {
 

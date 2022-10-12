@@ -28,7 +28,7 @@
 <body>
 <!-- PRELOADER -->
 <div id="preloader">
-		<div class="loader"><img src="loadinganimacia.gif" alt="#"><p>načitavam...</p></div>
+		<div class="loader"><img src="loading1.gif" alt="#"><p>načitavam...</p></div>
 	</div>
 
 <!-- HORNA NAVIGACIA -->
@@ -105,9 +105,109 @@
 <img src="obr/left1.png" alt="left">
 <img style="float: right;" src="obr/left1.png" alt="left">
 <!-- Background -->
+<br><br><br><br><br><br><br><br><br>
 
-<br><br>
-<!-- VIDEO PREHRAVAC -->
+<!--
+ FOTKY Z HRY
+<div class="gamegallerycontainer">
+	<div class="arrow l">
+		<img src="obr/prev.png" alt="prev">
+	</div>
+
+	<div class="slide slide-1">
+		 <div class="caption">
+		 	<h3>Obrázok 1</h3>
+		 	<p>Popis obrázku</p>
+		 </div>
+	</div>
+
+	<div class="slide slide-2">
+		 <div class="caption">
+		 	<h3>Obrázok 2</h3>
+		 	<p>Popis obrázku</p>
+		 </div>
+	</div>
+
+	<div class="slide slide-3">
+		 <div class="caption">
+		 	<h3>Obrázok 3</h3>
+		 	<p>Popis obrázku</p>
+		 </div>
+	</div>
+
+	<div class="slide slide-4">
+		 <div class="caption">
+		 	<h3>Obrázok 4</h3>
+		 	<p>Popis obrázku</p>
+		 </div>
+	</div>
+
+	<div class="arrow r" onclick="next()">
+		<img src="obr/next.png" alt="next">
+	</div>
+</div>
+-->
+
+<!-- Script na fungovanie galerie 
+<script>
+	 let slide = document.querySelectorAll('.slide');
+        var current = 0;
+
+        function cls(){
+            for(let i = 0; i < slide.length; i++){
+                  slide[i].style.display = 'none';
+            }
+        }
+
+        function next(){
+            cls();
+            if(current === slide.length-1) current = -1;
+            current++;
+
+            slide[current].style.display = 'block';
+            slide[current].style.opacity = 0.4;
+
+            var x = 0.4;
+            var intX = setInterval(function(){
+                x+=0.1;
+                slide[current].style.opacity = x;
+                if(x >= 1) {
+                    clearInterval(intX);
+                    x = 0.4;
+                }
+            }, 100);
+
+        }
+
+        function prev(){
+            cls();
+            if(current === 0) current = slide.length;
+            current--;
+
+            slide[current].style.display = 'block';
+            slide[current].style.opacity = 0.4;
+
+            var x = 0.4;
+            var intX = setInterval(function(){
+                x+=0.1;
+                slide[current].style.opacity = x;
+                if(x >= 1) {
+                    clearInterval(intX);
+                    x = 0.4;
+                }
+            }, 100);
+
+        }
+
+        function start(){
+            cls();
+            slide[current].style.display = 'block';
+        }
+        start();
+</script>
+-->
+
+<!-- VIDEO PREHRAVAC PRE PRVE VIDEO -->
 <div class="videocontainer">
 	<h1>Pozri gameplay</h1>
 	<div class="c-video">
@@ -123,7 +223,7 @@
 	</div>
 </div>
 
-<!-- VIDEO PREHRAVAC -->
+<!-- VIDEO PREHRAVAC PRE DRUHE VIDEO -->
 <div class="videocontainer1">
 	
 	<div class="c-video1">
@@ -140,7 +240,7 @@
 	<h1>Pozri gameplay</h1>
 </div>
 
-<!-- Script na fungovanie video prehravacu -->
+<!-- Script na fungovanie prveho videa-->
 <script>
 	var video1 = document.querySelector(".video1");
 	var juice = document.querySelector(".orange-juice");
@@ -170,7 +270,7 @@
 	});
 </script>
 
-<!-- Script na fungovanie video prehravacu -->
+<!-- Script na fungovanie prveho videa -->
 <script>
 	var video2 = document.querySelector(".video2");
 	var juice1 = document.querySelector(".orange-juice1");
@@ -191,7 +291,7 @@
 		togglePlayPause1();
 	};
 
-	video2.addEventListener("timeupdate1", function() {
+	video2.addEventListener("timeupdate", function() {
 		var juicePos1 = video2.currentTime / video2.duration;
 		juice1.style.width = juicePos1 * 100 + "%";
 		if(video2.ended) {

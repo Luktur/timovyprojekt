@@ -916,7 +916,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 95vh;
+	height: 100vh;
 	background: black;
 }
 
@@ -1001,7 +1001,7 @@ footer {
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	height: 95vh;
+	height: 100vh;
 	background: black;
 }
 

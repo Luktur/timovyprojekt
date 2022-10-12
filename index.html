@@ -106,10 +106,58 @@
 <img style="float: right;" src="obr/left1.png" alt="left">
 <!-- Background -->
 
+<br><br>
+<!-- VIDEO PREHRAVAC -->
+<div class="videocontainer">
+	<h1>Pozri gameplay</h1>
+	<div class="c-video">
+		<video class="video1" src="vid/video_test.mp4"></video>
+		<div class="controls">
+			<div class="orange-bar">
+				<div class="orange-juice"></div>
+			</div>
+			<div class="buttons">
+				<button id="play-pause"></button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Script na fungovanie video prehravacu -->
+<script>
+	var video1 = document.querySelector(".video1");
+	var juice = document.querySelector(".orange-juice");
+	var btn = document.getElementById("play-pause");
+
+	function togglePlayPause() {
+		if(video1.paused) {
+			btn.className = "pause";
+			video1.play();
+		}
+		else {
+			btn.className = "play";
+			video1.pause();
+		}
+	} 
+
+	btn.onclick = function() {
+		togglePlayPause();
+	};
+
+	video1.addEventListener("timeupdate", function() {
+		var juicePos = video1.currentTime / video1.duration;
+		juice.style.width = juicePos * 100 + "%";
+		if(video1.ended) {
+			btn.className = "play";
+		}
+	});
+</script>
+
+
 <!-- Tu by sa mohla nachadzat samotna hra + ako background bude nejaky art z hry -->
 <!-- Obrazky z hry + video gameplay + hudba + link na stiahnutie hry (osobitne ako div) -->
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br>
 
 <h1>⚔️ Spoznaj bossov! ⚔️</h1>
 <h3>Kto sa ti postaví do cesty?</h3>

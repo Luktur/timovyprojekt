@@ -28,7 +28,7 @@ public static class Program
             }
 
             var monitorKeyPresses = MonitorKeyPresses();
-
+            
             do
             {
                 snakeGame.OnGameTick();
